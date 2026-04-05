@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Защита</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: #fff;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 20px;
+            }
+
+            .block {
+                border: 10px solid black;
+                border-radius: 40px;
+                padding: 20px;
+                box-sizing: border-box;
+                font-weight: bold;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .left {
+                width: 200px;
+                height: 300px;
+                background: yellow;
+            }
+
+            .right {
+                width: 500px;
+                height: 300px;
+                background: green;
+                color: white;
+                position: relative;
+            }
+
+            .image-card {
+                position: absolute;
+                top: 50%;
+                left: -100px;
+                transform: translateY(-50%);
+                width: 200px;
+                height: 130px;
+                background: url("./1.jpg") center/cover no-repeat;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+<body>
+
+<div class="container">
+    <div class="block left">
+        ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+    </div>
+
+    <div class="block right">
+        ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+        <div class="image-card"></div>
+    </div>
+</div>
+
+</body>
+</html>
